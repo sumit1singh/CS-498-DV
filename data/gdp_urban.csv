@@ -1,191 +1,191 @@
 ﻿country,gdpgrowthrate,urbanarea,population
-Tuvalu,8.5,0,"9,477"
-Armenia,7.4,0,"1,729"
-Bangladesh,7,9,"30,670"
-Rwanda,6.6,0,"20,185"
-Vietnam,6,2,24
-Djibouti,5.9,1,"40,877"
-China,5.7,4,"1,864"
-Cambodia,5.5,1,"21,488"
-Ethiopia,5.5,1,"5,154"
-Dominica,5.4,34,"5,534"
-Georgia,5.3,5,320
-Moldova,5.3,8,"1,401"
-Hungary,5,0,"59,108"
-Nepal,5,0,89
-Serbia,4.8,0,"7,454"
-Romania,4.7,7,"11,199"
-Philippines,4.6,4,175
-Cabo Verde,4.5,4,"5,434"
-Lithuania,4.5,7,309
-Tajikistan,4.5,0,"7,882"
-Turkmenistan,4.5,0,"1,604"
-Kosovo,4.3,0,"1,565"
-Cote d'Ivoire,4.2,1,"181,336"
-Ghana,4.2,3,333
-Guyana,4.2,0,"5,269"
-Poland,4.2,10,"5,799"
-Bulgaria,4.1,6,"1,456"
-Benin,4,1,357
-Dominican Republic,4,11,"3,801"
-Estonia,4,6,"14,215"
-India,4,7,"30,169"
-Ireland,4,8,64
-Indonesia,3.9,2,"1,930"
-Antigua and Barbuda,3.8,61,"3,569"
-Seychelles,3.8,27,"16,400"
-Ukraine,3.8,6,"823,828"
-Turks and Caicos Islands,3.7,2,"40,105"
-Montenegro,3.6,0,241
-Papua New Guinea,3.6,0,"37,377"
-South Asia,3.6,6,"3,509"
-Uzbekistan,3.6,0,"3,967"
-Croatia,3.5,9,"12,730"
-"Egypt, Arab Rep.",3.5,2,"2,328"
-Mauritius,3.5,63,142
-North Macedonia,3.5,11,795
-Bosnia and Herzegovina,3.3,3,"7,844"
-Mongolia,3.3,0,"5,091"
-Sierra Leone,3.3,1,746
-Kazakhstan,3.2,0,50
-Lao PDR,3.1,0,"8,616"
-Mauritania,3.1,0,"10,903"
-Kenya,3,1,"42,031"
-Latvia,3,5,"4,624"
-Malaysia,3,5,944
-Marshall Islands,3,0,911
-Samoa,3,4,270
-"Gambia, The",2.9,4,"22,678"
-Brunei Darussalam,2.8,19,497
-Togo,2.8,3,"4,709"
-Uganda,2.8,0,"53,870"
-Albania,2.7,6,"1,894"
-Burkina Faso,2.7,0,"1,397"
-Tanzania,2.7,0,"2,185"
-Grenada,2.6,50,"64,096"
-Guinea,2.6,1,"16,687"
-Senegal,2.4,1,"8,485"
-Kyrgyz Republic,2.3,0,40
-Portugal,2.3,14,"8,346"
-Slovak Republic,2.3,0,"4,487"
-Czech Republic,2.2,0,813
-Guatemala,2.2,4,207
-Maldives,2.2,0,"6,149"
-Myanmar,2.2,1,"5,474"
-Guinea-Bissau,2.1,1,"7,451"
-Iraq,2.1,3,"6,975"
-Madagascar,2.1,0,331
-Thailand,2.1,7,"460,296"
-Cayman Islands,2,67,"148,085"
-Greece,2,14,"27,085"
-Colombia,1.9,3,"3,075"
-Cyprus,1.9,25,"8,209"
-Denmark,1.9,22,"42,560"
-El Salvador,1.9,17,"1,634"
-Mali,1.9,0,"115,921"
-Niger,1.9,0,"9,058"
-Bhutan,1.8,0,"10,496"
-"Korea, Rep.",1.8,22,"13,892"
-Slovenia,1.8,12,63
-St. Kitts and Nevis,1.8,89,"42,038"
-United States,1.8,9,..
-Sri Lanka,1.7,6,"4,137"
-Israel,1.6,30,"2,298"
-Malawi,1.6,2,"2,472"
-Azerbaijan,1.4,0,"1,313"
-Belarus,1.4,4,"6,068"
-Cameroon,1.4,1,594
-France,1.4,16,"2,465"
-Russian Federation,1.4,1,"5,350"
-Spain,1.4,14,"1,896"
-Timor-Leste,1.4,2,553
-Central African Republic,1.3,0,632
-Panama,1.3,4,"9,767"
-Austria,1.2,0,"3,073"
-Netherlands,1.2,38,"23,973"
-Puerto Rico,1.2,96,205
-St. Lucia,1.2,58,"8,081"
-"Congo, Dem. Rep.",1.1,0,459
-Costa Rica,1.1,8,45
-Palau,1.1,7,"2,363"
-Eswatini,1,5,516
-Honduras,1,3,"101,149"
-Libya,1,1,26
-Morocco,1,3,"293,463"
-Belgium,0.9,41,"1,154"
-Finland,0.9,7,"2,170"
-Gabon,0.9,0,416
-Japan,0.9,30,"22,501"
-"Bahamas, The",0.8,4,"10,615"
-Bolivia,0.8,0,"16,423"
-Botswana,0.8,0,"1,225"
-San Marino,0.8,96,"5,545"
-United Kingdom,0.8,24,"15,765"
-Kiribati,0.7,0,"4,189"
-Lesotho,0.7,0,"3,784"
-Malta,0.6,92,"3,686"
-New Zealand,0.6,3,"98,611"
-Afghanistan,0.5,,"1,207"
-Comoros,0.5,11,"4,369"
-Italy,0.5,25,"4,083"
-Jordan,0.5,4,"77,811"
-Norway,0.5,6,14
-Peru,0.5,1,"2,828"
-Sao Tome and Principe,0.5,7,"1,133"
-Australia,0.4,0,"4,284"
-Brazil,0.4,2,"24,922"
-Vanuatu,0.4,1,"50,027"
-Fiji,0.3,10,"22,807"
-Germany,0.3,18,"6,706"
-Luxembourg,0.3,33,"2,988"
-Canada,0.2,1,"2,758"
-Chad,0.2,0,"10,515"
-Jamaica,0.2,28,"107,539"
-Switzerland,0.2,20,"2,117"
-United Arab Emirates,0.2,12,36
-Middle East & North Africa,0.1,2,33
-Solomon Islands,0.1,0,154
-Sweden,0.1,8,"28,255"
-St. Vincent and the Grenadines,0,29,"7,482"
-Chile,-0.1,2,"3,917"
-Tunisia,-0.1,6,55
-Uruguay,-0.1,3,"3,217"
-Barbados,-0.2,98,"5,639"
-Nigeria,-0.4,2,"2,926"
-Singapore,-0.4,80,"1,131"
-Sub-Saharan Africa,-0.4,1,155
-Trinidad and Tobago,-0.4,45,"38,340"
-Iceland,-0.5,1,"616,754"
-Turkey,-0.5,6,"37,588"
-Mozambique,-0.7,0,"4,004"
-"Micronesia, Fed. Sts.",-0.8,35,16
-Tonga,-0.9,25,34
-Pakistan,-1,5,58
-Algeria,-1.1,1,"433,229"
-Mexico,-1.2,5,381
-South Africa,-1.2,4,"8,896"
-Zambia,-1.2,0,"6,283"
-Burundi,-1.3,0,"2,469"
-Kuwait,-1.3,22,"19,022"
-Paraguay,-1.3,0,"34,679"
-Saudi Arabia,-1.3,2,388
-Belize,-1.6,2,"3,290"
-Ecuador,-1.6,4,24
-West Bank and Gaza,-1.6,41,739
-Suriname,-1.7,0,"7,974"
-Curacao,-1.9,0,"61,858"
-"Hong Kong SAR, China",-1.9,86,"3,019"
-Qatar,-2,13,35
-Haiti,-2.2,3,7
-Oman,-2.4,2,"10,157"
-Bahrain,-2.6,71,"30,947"
-Namibia,-3,0,"8,333"
-Argentina,-3.1,2,"55,427"
-"Congo, Rep.",-3.4,0,"268,720"
-Angola,-4,0,"3,288"
-Liberia,-4.6,0,"16,636"
-Nicaragua,-5.1,2,74
-Lebanon,-5.7,23,"34,317"
-"Macao SAR, China",-6,58,"3,480"
-Equatorial Guinea,-8.8,0,"7,552"
-Zimbabwe,-9.4,0,"4,651"
+Afghanistan,0.5,0,13.21021472
+Albania,2.7,6,10.75572215
+Algeria,-1.1,1,14.90454055
+Angola,-4,0,14.30099597
+Antigua and Barbuda,3.8,61,4.584962501
+Argentina,-3.1,2,15.3190017
+Armenia,7.4,0,10.86418614
+Australia,0.4,0,14.39124359
+Austria,1.2,0,12.33147682
+Azerbaijan,1.4,0,12.43410693
+"Bahamas, The",0.8,4,8.321928095
+Bahrain,-2.6,71,10.45224124
+Bangladesh,7,9,15.85106579
+Barbados,-0.2,98,6.475733431
+Belarus,1.4,4,12.8637991
+Belgium,0.9,41,13.45108229
+Belize,-1.6,2,7.451211112
+Benin,4,1,12.40779885
+Bhutan,1.8,0,8.271463028
+Bolivia,0.8,0,12.94434603
+Bosnia and Herzegovina,3.3,3,10.64745843
+Botswana,0.8,0,10.61194694
+Brazil,0.4,2,17.46830584
+Brunei Darussalam,2.8,19,8.379378367
+Bulgaria,4.1,6,12.36331346
+Burkina Faso,2.7,0,12.50158842
+Burundi,-1.3,0,10.50779464
+Cabo Verde,4.5,4,8.479780264
+Cambodia,5.5,1,11.89216331
+Cameroon,1.4,1,13.79512648
+Canada,0.2,1,14.88077926
+Cayman Islands,2,67,6
+Central African Republic,1.3,0,10.91438513
+Chad,0.2,0,11.80130419
+Chile,-0.1,2,14.00140819
+China,5.7,4,19.65198364
+Colombia,1.9,3,15.29149449
+Comoros,0.5,11,7.912889336
+"Congo, Dem. Rep.",1.1,0,15.18986316
+"Congo, Rep.",-3.4,0,11.77684423
+Costa Rica,1.1,8,11.95383268
+Cote d'Ivoire,4.2,1,13.6359448
+Croatia,3.5,9,11.18487534
+Curacao,-1.9,0,7.14974712
+Cyprus,1.9,25,9.63481105
+Czech Republic,2.2,0,12.93737382
+Denmark,1.9,22,12.31373335
+Djibouti,5.9,1,9.54303182
+Dominica,5.4,34,5.64385619
+Dominican Republic,4,11,13.07280253
+Ecuador,-1.6,4,13.41243753
+"Egypt, Arab Rep.",3.5,2,15.35916616
+El Salvador,1.9,17,12.17492568
+Equatorial Guinea,-8.8,0,9.882643049
+Estonia,4,6,9.831307244
+Eswatini,1,5,8.076815597
+Ethiopia,5.5,1,14.46900579
+Fiji,0.3,10,8.957102042
+Finland,0.9,7,12.20120501
+France,1.4,16,15.71719444
+Gabon,0.9,0,10.88722062
+"Gambia, The",2.9,4,10.44811631
+Georgia,5.3,5,11.09341756
+Germany,0.3,18,15.96794671
+Ghana,4.2,3,14.02643699
+Greece,2,14,13.05069894
+Grenada,2.6,50,5.321928095
+Guatemala,2.2,4,13.02686921
+Guinea,2.6,1,12.13153547
+Guinea-Bissau,2.1,1,9.667111542
+Guyana,4.2,0,7.693486957
+Haiti,-2.2,3,12.58613609
+Honduras,1,3,12.41837972
+"Hong Kong SAR, China",-1.9,86,12.86321835
+Hungary,5,0,12.7679775
+Iceland,-0.5,1,8.370687407
+India,4,7,18.81220238
+Indonesia,3.9,2,17.17606599
+Iraq,2.1,3,14.72520647
+Ireland,4,8,11.5863707
+Israel,1.6,30,13.00299077
+Italy,0.5,25,15.37721053
+Jamaica,0.2,28,10.67419227
+Japan,0.9,30,16.82278242
+Jordan,0.5,4,13.14497682
+Kazakhstan,3.2,0,13.357552
+Kenya,3,1,13.7619667
+Kiribati,0.7,0,5.977279923
+"Korea, Rep.",1.8,22,15.35940641
+Kosovo,4.3,0,#VALUE!
+Kuwait,-1.3,22,12.01436924
+Kyrgyz Republic,2.3,0,11.16616308
+Lao PDR,3.1,0,11.27146303
+Latvia,3,5,10.3586512
+Lebanon,-5.7,23,12.56700537
+Lesotho,0.7,0,9.214319121
+Liberia,-4.6,0,11.26737193
+Libya,1,1,12.38532318
+Lithuania,4.5,7,10.88874325
+Luxembourg,0.3,33,9.11113567
+"Macao SAR, China",-6,58,9.303780748
+Madagascar,2.1,0,13.25369978
+Malawi,1.6,2,11.58543205
+Malaysia,3,5,14.54912284
+Maldives,2.2,0,7.6794801
+Mali,1.9,0,12.98031812
+Malta,0.6,92,8.842350343
+Marshall Islands,3,0,5.491853096
+Mauritania,3.1,0,11.20640391
+Mauritius,3.5,63,9.011227255
+Mexico,-1.2,5,16.62612253
+"Micronesia, Fed. Sts.",-0.8,35,4.700439718
+Middle East & North Africa,0.1,2,18.16281909
+Moldova,5.3,8,10.17242751
+Mongolia,3.3,0,11.08347933
+Montenegro,3.6,0,8.700439718
+Morocco,1,3,14.4577015
+Mozambique,-0.7,0,13.37381675
+Myanmar,2.2,1,14.00343007
+Namibia,-3,0,10.25856603
+Nepal,5,0,12.43697175
+Netherlands,1.2,38,13.94443755
+New Zealand,0.6,3,12.03239017
+Nicaragua,-5.1,2,11.88569637
+Niger,1.9,0,11.84784036
+Nigeria,-0.4,2,16.58946097
+North Macedonia,3.5,11,10.23720996
+Norway,0.5,6,12.09308739
+Oman,-2.4,2,11.99541385
+Pakistan,-1,5,16.2476865
+Palau,1.1,7,3.807354922
+Panama,1.3,4,11.4655664
+Papua New Guinea,3.6,0,10.14593215
+Paraguay,-1.3,0,12.06474276
+Peru,0.5,1,14.60513223
+Philippines,4.6,4,15.61041932
+Poland,4.2,10,14.47718907
+Portugal,2.3,14,12.71123677
+Puerto Rico,1.2,96,11.54496443
+Qatar,-2,13,11.42940674
+Romania,4.7,7,13.36016123
+Russian Federation,1.4,1,16.71450044
+Rwanda,6.6,0,11.04780555
+Samoa,3,4,5.169925001
+San Marino,0.8,96,5.044394119
+Sao Tome and Principe,0.5,7,7.266786541
+Saudi Arabia,-1.3,2,14.78621857
+Senegal,2.4,1,12.86920825
+Serbia,4.8,0,11.93553341
+Seychelles,3.8,27,5.781359714
+Sierra Leone,3.3,1,11.65150022
+Singapore,-0.4,80,12.46122363
+Slovak Republic,2.3,0,11.51471405
+Slovenia,1.8,12,10.14338321
+Solomon Islands,0.1,0,7.276124405
+South Africa,-1.2,4,15.22656272
+South Asia,3.6,6,19.23433564
+Spain,1.4,14,15.19798453
+Sri Lanka,1.7,6,11.96722626
+St. Kitts and Nevis,1.8,89,4
+St. Lucia,1.2,58,5.087462841
+St. Vincent and the Grenadines,0,29,5.857980995
+Sub-Saharan Africa,-0.4,1,18.72477029
+Suriname,-1.7,0,8.573647187
+Sweden,0.1,8,13.11894107
+Switzerland,0.2,20,12.61723786
+Tajikistan,4.5,0,11.26971112
+Tanzania,2.7,0,14.21538132
+Thailand,2.1,7,15.08177468
+Timor-Leste,1.4,2,8.599912842
+Togo,2.8,3,11.68387187
+Tonga,-0.9,25,4.584962501
+Trinidad and Tobago,-0.4,45,9.529430554
+Tunisia,-0.1,6,12.96108789
+Turkey,-0.5,6,15.91667257
+Turkmenistan,4.5,0,11.55985504
+Turks and Caicos Islands,3.7,2,5.129283017
+Tuvalu,8.5,0,2.807354922
+Uganda,2.8,0,13.31018673
+Ukraine,3.8,6,14.91751194
+United Arab Emirates,0.2,12,13.02462026
+United Kingdom,0.8,24,15.7583013
+United States,1.8,9,18.03574418
+Uruguay,-0.1,3,11.68299458
+Uzbekistan,3.6,0,14.02202097
+Vanuatu,0.4,1,6.209453366
+Vietnam,6,2,15.06663582
+West Bank and Gaza,-1.6,41,11.76487159
+Zambia,-1.2,0,12.88264305
+Zimbabwe,-9.4,0,12.18332522
