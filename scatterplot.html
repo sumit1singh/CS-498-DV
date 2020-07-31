@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+body {
+  font: 16px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+.tooltip {
+            position: absolute;
+            font-size: 12px;
+            width:  auto;
+            height: auto;
+            pointer-events: none;
+			background: white;
+			border: 1px black;
+			color: black;
+        }
+</style>
+<body>
+<div class="jumbotron" style="background-color: gray; color: white" aligncenter>
+    <h1 style="padding-left : 2%">How much of an impact does urbanization of a country have on GDP growth?</h1></div>
+   <p style="padding-left : 2%">The scatterplot of "Urban Land % & Average Urban Population Vs GDP growth rate" depicts the average GDP growth rate on the x-axis versus the average percentage of Urban Land along the Y-axis and the rural population as the size of the circles in the scatter plot. 
+The color scheme is based on the urban area size.</p>
+  
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz" width=460 height=400></div>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 800 - margin.left - margin.right,
+    height = 550 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right) //550
+    .attr("height", height + margin.top + margin.bottom+10) //440
+    .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+//Read the data
+d3.csv("https://raw.githubusercontent.com/sumit1singh/CS-498-DV/master/data/gdp_urban.csv", function(data) {
+
+  // Add X axis
+var xScale=d3.scaleLinear().domain([-10,12]).range([0,width]);
+var yScale=d3.scaleLinear().domain([0,100]).range([height, 0]);
+
+  svg.append("g")
+    .attr("transform","translate(0,"+ height + ")")
+    .call(d3.axisBottom(xScale));
+
+  // Add Y axis
+  svg.append("g")
+    .call(d3.axisLeft(yScale));
+  
+ var circle_size = d3.scaleLinear().domain([0,15]).range([0,15]);
+ 
+ var tooltip = d3.select("body").append("div")
+                  .attr("class", "tooltip")
+                  .style("opacity", 0);
+				  
+				
+          
+              // tooltip mouseover event handler
+              var tipMouseover = function(d) {
+                  //var color = colorScale(d.manufacturer);
+                  var html  = "<span style='color:red'> Country Name : " + d['country'] + "<br/>" + "GDP Growth Rate : " + d.gdpgrowthrate + " <br/>" + "Urban Area % : " 
+				  + d.urbanarea + " <br />" + "Average urban Population(in thousands) : " + d.population + "<br /></span>"; 
+                              
+
+                  tooltip.html(html)
+                      .style("left",  (d3.event.pageX + 15) + "px")
+                      .style("top", (d3.event.pageY - 28) + "px")
+                    .transition()
+                      .duration(200) // ms
+                      .style("opacity", 1) 
+                      .style("position", "absolute")
+                      .style("z-index", "10")
+                      .style("background", "#000")
+
+              };
+              // tooltip mouseout event handler
+              var tipMouseout = function(d) {
+                  tooltip.transition()
+                      .duration(300) // ms
+                      .style("opacity", 0); 
+              };
+
+        
+  // Add dots
+  svg.append('g')
+    .selectAll("dot")
+    .data(data)
+    .enter()
+    .append("circle")
+      .attr("cx", function (d) { return xScale(d.gdpgrowthrate); } )
+      .attr("cy", function (d) { return yScale(d.urbanarea); } )
+      .attr("r", function (d) { return circle_size(d.populationlog); } )
+      .attr("fill", function(d) {
+        if (d.urbanarea >= 50) {
+          return "red";
+        } else if (d.urbanarea >= 30 && d.urbanarea < 50) {
+          return "orange";
+        } else if (d.urbanarea >= 20 && d.urbanarea < 30) {
+          return "yellow";
+        }    
+          return "green";
+      })
+      .style("stroke", "black")
+	  .on("mouseover", tipMouseover)
+      .on("mouseout", tipMouseout);
+
+      
+
+})
+
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 5 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+        .text("gdp vs urban area");
+
+svg.append("text")      // text label for the x axis
+        .attr("x", (width / 2) )
+        .attr("y", height+margin.top+10 )
+        .style("text-anchor", "middle")
+        .text("gdp growth rate");
+        
+svg.append("text")  // text label for the x axis
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0-margin.left)
+        .attr("x",0-height/2)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("urban area %");
+
+
+</script>
+<div aligncenter>
+  <br/><h3>So what does it mean?</h3><br/>
+  <p style="padding-left : 2%">Above picture makes it clear that urbanization is not the only reason for higher GDP growth.As we can see there are countries with higher rate of urbanization but lagging in GDP growth rate .</p>
+  <p style="padding-left : 2%">Countries with good amount of natural resources and significant physical capital tend to have a higher GDP.</p>
+  <p style="padding-left : 2%">Interestingly, there are exceptions like Monaco, Morocco and Singapore which have a significant GDP owing to their small land area.</p>
+  </div>
+<p style="padding-left : 2%">go to the next page to explore how much of the land area of major countries of the world is urbanized.</p>
+<h3><button href="urbanarea.html" type="button" >next page</button></h3><br/></div>
+</body>

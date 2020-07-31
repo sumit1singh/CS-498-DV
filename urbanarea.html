@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body {
+  font: 16px sans-serif;
+}
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+.tooltip {
+            position: absolute;
+            font-size: 12px;
+            width:  auto;
+            height: auto;
+            pointer-events: none;
+			background: white;
+			border: 1px black;
+			color: black;
+        }
+#container div{
+    display:inline-block;
+    width:130px;
+}
+
+</style>
+<body>
+<div class="jumbotron" style="background-color: gray; color: white" aligncenter>
+    <h1 style="padding-left : 2%">How big is the urban land area in various countries?</h1></div>
+   <p style="padding-left : 2%">The below bar chart is a representation of average urban land area (over last 10 years) across various countries . It depicts countries on the x-axis versus the urban area percentage on the y-axis. </p>
+   <p style="padding-left : 2%">Larger countries obviously have a large urban area. Although there is no direct co-relation between gdp growth rate and urbanization still countries are moving towards rapid urbanization which is evident from below increasing urbanization chart.</p>
+<svg width="1560" height="500"></svg>
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+var tooltip = d3.select("body").append("div")
+                  .attr("class", "tooltip")
+                  .style("opacity", 0);
+				  
+				
+          
+              // tooltip mouseover event handler
+              var tipMouseover = function(d) {
+                  //var color = colorScale(d.manufacturer);
+                  var html  = "<span style='color:red'> Country Name : " + d['Country'] + "<br/>" + "Average Urban Area  : " + d.Average + " % <br/>"  + "<br /></span>"; 
+                              
+
+                  tooltip.html(html)
+                      .style("left",  (d3.event.pageX + 15) + "px")
+                      .style("top", (d3.event.pageY - 28) + "px")
+                    .transition()
+                      .duration(200) // ms
+                      .style("opacity", 1) // started as 0!
+
+              };
+              // tooltip mouseout event handler
+              var tipMouseout = function(d) {
+                  tooltip.transition()
+                      .duration(300) // ms
+                      .style("opacity", 0); // don't care about position!
+              };
+var svg = d3.select("svg"),
+    margin = {top: 20, right: 20, bottom: 100, left: 40},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom;
+
+var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+    y = d3.scaleLinear().rangeRound([height, 0]);
+
+var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("https://raw.githubusercontent.com/sumit1singh/CS-498-DV/master/data/urban_area_final.csv", function(d) {
+  d.Average = +d.urban_area_per;
+  return d;
+}, function(error, data) {
+  if (error) throw error;
+
+  x.domain(data.map(function(d) { return d.Country; }));
+  y.domain([0, d3.max(data, function(d) { return d.Average; })]);
+
+  g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(-20," + height + ")")
+      .call(d3.axisBottom(x))
+	  .selectAll("text")	
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", "rotate(-65)");
+	  
+
+  g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y).ticks(10,".2s"))
+    .append("text")	  
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("text-anchor", "end")
+      .text("Average urban Land(%)");
+
+  g.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.Country); })
+      .attr("y", function(d) { return y(d.Average); })
+      .attr("transform","translate(-20,0)")
+      .attr("width", x.bandwidth())
+      .attr("height", function(d) { return height - y(d.Average); })
+	  .on("mouseover", tipMouseover)
+      .on("mouseout", tipMouseout);
+});
+
+</script>
+
+<div style="width:500px;" id="container">
+    <div style ="float: left"><button href="index.html" type="button" >Back</button></div>
+    <div style ="float:  right"><button href="population.html" type="button">next page</button></div>
+</div>
+
+</body>
