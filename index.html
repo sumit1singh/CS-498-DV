@@ -5,9 +5,8 @@
   <meta name="author" content="Sumit Kumar Singh">
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="css/annotation-style.css">
+  <link rel="stylesheet" href="css/stepper.css">
 </head>
-
 <style>
 
 body {
@@ -36,13 +35,22 @@ body {
         }
 </style>
 <body>
+<div id="container">
 <div class="jumbotron" style="background-color: gray; color: white" aligncenter>
     <h1 style="padding-left : 2%">How much of an impact does urbanization of a country have on GDP growth which is finally leading to deforestation?</h1></div>
    <p style="padding-left : 2%">The scatterplot of "Urban Land % & Average Urban Population Vs GDP growth rate" depicts the average GDP growth rate on the x-axis versus the average percentage of Urban Land along the Y-axis and the rural population as the size of the circles in the scatter plot. 
 The color scheme is based on the urban area size.</p>
   
 <!-- Create a div where the graph will take place -->
-<div id="my_dataviz" width=460 height=400></div>
+<div id="my_dataviz" width=460 height=400>
+      <div id="annotation-steps">
+          <div class="annotation" id="step1-high-annotation" >
+            <h4>As Urban area increases GDP increases across most of the countries.</h4>
+                		  
+          </div>
+          </div>
+
+</div>
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
@@ -169,4 +177,5 @@ svg.append("text")  // text label for the x axis
   </div>
 <p style="padding-left : 2%">go to the next page to explore how much of the land area of major countries of the world is urbanized.</p>
 <h3><a href="urbanarea.html" class="button">Next Page</a></h3><br/>
+</div>
 </body>
