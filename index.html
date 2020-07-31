@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <title>Final Project for CS 498 - Data Visualization Course</title>
+  <meta name="author" content="Sumit Kumar Singh">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="css/annotation-style.css">
+</head>
 
 <style>
 
@@ -30,7 +37,7 @@ body {
 </style>
 <body>
 <div class="jumbotron" style="background-color: gray; color: white" aligncenter>
-    <h1 style="padding-left : 2%">How much of an impact does urbanization of a country have on GDP growth?</h1></div>
+    <h1 style="padding-left : 2%">How much of an impact does urbanization of a country have on GDP growth which is finally leading to deforestation?</h1></div>
    <p style="padding-left : 2%">The scatterplot of "Urban Land % & Average Urban Population Vs GDP growth rate" depicts the average GDP growth rate on the x-axis versus the average percentage of Urban Land along the Y-axis and the rural population as the size of the circles in the scatter plot. 
 The color scheme is based on the urban area size.</p>
   
@@ -152,15 +159,14 @@ svg.append("text")  // text label for the x axis
         .attr("dy", "1em")
         .style("text-anchor", "middle")
         .text("urban area %");
-
-
+                
 </script>
 <div aligncenter>
   <br/><h3>So what does it mean?</h3><br/>
-  <p style="padding-left : 2%">Above picture makes it clear that urbanization is not the only reason for higher GDP growth.As we can see there are countries with higher rate of urbanization but lagging in GDP growth rate .</p>
-  <p style="padding-left : 2%">Countries with good amount of natural resources and significant physical capital tend to have a higher GDP.</p>
-  <p style="padding-left : 2%">Interestingly, there are exceptions like Monaco, Morocco and Singapore which have a significant GDP owing to their small land area.</p>
+  <p style="padding-left : 2%">Above picture makes it clear that urbanization is one of the many if not only reason for higher GDP growth.As we can see there are countries with higher rate of urbanization have in general high GDP growth rate .</p>
+  <p style="padding-left : 2%">Also countries with good amount of natural resources and significant physical capital tend to have a higher GDP.</p>
+  <p style="padding-left : 2%">Interestingly, there are exceptions like Monaco, Morocco and Singapore which have a significant GDP owing to their small land area which are completely urbanized.</p>
   </div>
 <p style="padding-left : 2%">go to the next page to explore how much of the land area of major countries of the world is urbanized.</p>
-<h3><a href="urbanarea.html" class="button">Next Page</a></h3><br/></div>
+<h3><a href="urbanarea.html" class="button">Next Page</a></h3><br/>
 </body>
