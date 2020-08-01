@@ -35,11 +35,16 @@ body {
 <div class="jumbotron" style="background-color: gray; color: white" aligncenter>
     <h1 style="padding-left : 2%">How big is the urban land area in various countries?</h1></div>
    <p style="padding-left : 2%">The below bar chart is a representation of average urban land area (over last 10 years) across various countries . It depicts countries on the x-axis versus the urban area percentage on the y-axis. </p>
-   <p style="padding-left : 2%">Larger countries obviously have a large urban area. Although there is no direct co-relation between gdp growth rate and urbanization still countries are moving towards rapid urbanization which is evident from below increasing urbanization chart.</p>
-<svg width="1560" height="500"></svg>
+   <p style="padding-left : 2%">Larger countries obviously have a large urban area. There seems to be a direct co-relation between gdp growth rate and urbanization still countries are moving towards rapid urbanization which is evident from below increasing urbanization chart.</p>
+  <p style="padding-left : 2%">Please check out here to see the trend of increasing urban population <a href="population.html">click here</a></p>
+<svg width="1560" height="500">
+</svg>
+
+
 <script src="https://d3js.org/d3.v4.js"></script>
 
 <script>
+
 var tooltip = d3.select("body").append("div")
                   .attr("class", "tooltip")
                   .style("opacity", 0);
@@ -58,6 +63,7 @@ var tooltip = d3.select("body").append("div")
                     .transition()
                       .duration(200) // ms
                       .style("opacity", 1) // started as 0!
+                      .style("background", "#000")
 
               };
               // tooltip mouseout event handler
@@ -120,11 +126,26 @@ d3.csv("https://raw.githubusercontent.com/sumit1singh/CS-498-DV/master/data/urba
       .on("mouseout", tipMouseout);
 });
 
+svg.append("text")
+        .attr("x", 400)             
+        .attr("y", 100)
+        .attr("text-anchor", "middle")  
+        .style("font" ,"16px sans-serif") 
+        .text("Most developed countries have higher urban Area");
+        
+svg.append("text")  // text label for the x axis
+        .attr("transform", "rotate(-90)")
+        .attr("y", -2)
+        .attr("x",-200)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .style("font" ,"8px sans-serif") 
+        .text("Average urban Land(%)");
+        
 </script>
 
-<div style="width:500px;" id="container">
+<div style="width:500px;" id="containers">
     <div style ="float: left"><a href="index.html" class="button">Back</a></div>
-    <div style ="float:  right"><a href="population.html" class="button">Next Page</a></div>
+    <div style ="float:  right"><a href="forestarea.html" class="button">Next Page</a></div>
 </div>
-
 </body>
